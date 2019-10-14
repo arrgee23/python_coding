@@ -19,6 +19,7 @@ print("integer %d float %2.2f "%(a,a))
 #init 2d array
 n = 3
 mat = [[0 for i in range(n)] for j in range(n)]
+mat2 = [[0]*n]*n
 print(mat)
 
 
@@ -112,3 +113,13 @@ del(dic["name"])
 
 #removes entire dictionary
 #dict.clear()
+
+
+#declaring a big array
+import array
+print("--------------------------------------------------------------")
+limit = 10**9+7
+arr = array.array('i',[0])*(limit+1) #integer type all set to 0
+
+#ascii value of a character
+print("ascii value of 'c': ",ord(c))
